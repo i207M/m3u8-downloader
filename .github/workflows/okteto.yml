@@ -1,0 +1,29 @@
+name: Okteto Reboot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare
+        uses: actions/checkout@v2
+      - uses: okteto/login@main
+        with:
+          token: ${{ secrets.OKTETO_TOKEN }}
+
+      - uses: okteto/namespace@main
+        with:
+          namespace: ${{ secrets.OKTETO_NAME }}
+
+      - name: Destroy stack
+        uses: okteto/destroy-stack@main
+        with:
+          name: m3u8
+
+      - name: Create stack
+        uses: okteto/deploy-stack@main
+        with:
+          name: m3u8
+          build: 'true'
