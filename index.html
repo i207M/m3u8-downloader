@@ -353,13 +353,6 @@
 <body>
 <div id="m-loading">
   页面加载中，请耐心等待...
-  <h1 style="white-space: pre;">
-    推荐一个 m3u8 网页版提取工具，无需下载软件，打开网站即可下载，自动检测，一键下载。
-    工具链接：https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html
-    工具教程：https://segmentfault.com/a/1190000021847172?_ea=32289224
-    <img src="https://upyun.luckly-mjw.cn/Assets/blog/m3u8-downloader-121-75.jpeg" alt="m3u8 视频下载工具" title="logo"/>
-    <a target="_blank" href="https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html">点击跳转</a>
-  </h1>
 </div>
 <section id="m-app" v-cloak>
   <!--顶部操作提示-->
@@ -367,9 +360,8 @@
   <a class="m-p-help" target="_blank" href="https://segmentfault.com/a/1190000021847172">?</a>
   <a class="m-p-mse" target="_blank" href="https://segmentfault.com/a/1190000025182822">无差别提取工具</a>
   <a class="m-p-tamper" target="_blank" href="https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/m3u8-downloader.user.js">手动添加/更新油猴插件</a>
-  <a class="m-p-github" target="_blank" href="https://github.com/Momo707577045/m3u8-downloader">github</a>
+  <a class="m-p-github" target="_blank" href="https://github.com/Momo707577045/m3u8-downloader">Github</a>
   <a class="m-p-other" target="_blank" href="http://blog.luckly-mjw.cn/tool-show/index.html">其他实用工具</a>
-  <a class="m-p-language" href="http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index-en.html">English version</a>
 
   <!-- 广告
   <a v-if="isShowRefer" class="m-p-refer" target="_blank" href="https://segmentfault.com/a/1190000024416860">
@@ -379,7 +371,7 @@
   </a> -->
 
   <!--文件载入-->
-  <div class="m-p-temp-url">测试链接：http://1257120875.vod2.myqcloud.com/0ef121cdvodtransgzp1257120875/3055695e5285890780828799271/v.f230.m3u8</div>
+  <div class="m-p-temp-url">测试链接</div>
   <section class="m-p-input-container">
     <input type="text" v-model="url" :disabled="downloading" placeholder="请输入 m3u8 链接">
 
@@ -405,7 +397,7 @@
   <a v-if="!downloading" class="m-p-report" target="_blank" href="https://segmentfault.com/a/1190000021847172">运行出现问题，可点击此按钮留言反馈，作者将第一时间跟进，共同维护本项目</a>
 
   <div class="m-p-cross" @click="copyCode">当无法下载，资源发生跨域限制时，在视频源页面打开控制台，注入代码解决，点击本按钮复制代码</div>
-  <a class="m-p-final" target="_blank" href="https://segmentfault.com/a/1190000025182822">下载的视频看不了？试试这个终结解决方案「无差别视频提取工具」，有配套「油猴」插件啦！！！</a>
+  <a class="m-p-final" target="_blank" href="https://segmentfault.com/a/1190000025182822">下载的视频看不了？试试这个终结解决方案「无差别视频提取工具」，有配套「油猴」插件啦</a>
 
   <template v-if="finishList.length > 0">
     <div class="m-p-line"></div>
